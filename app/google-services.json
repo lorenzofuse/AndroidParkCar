@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1059883199240",
+    "project_id": "lf-parkcar",
+    "storage_bucket": "lf-parkcar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059883199240:android:a5921bb4351ed7c50c1abd",
+        "android_client_info": {
+          "package_name": "com.example.lf_parkcar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3GxXC-j89fXOYEmAiYc5MaU2eLdyj3UY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
