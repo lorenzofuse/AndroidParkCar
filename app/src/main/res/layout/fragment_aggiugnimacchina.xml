@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddCar">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/ivcar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tracking"/>
+        <EditText
+            android:id="@+id/textPark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:hint="Inserisci il nome del parcheggio"
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/textCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Inserisci il nome della macchina"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <RelativeLayout
+            android:id="@+id/attpos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attiva la posizione"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnattiva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Inserisci"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
