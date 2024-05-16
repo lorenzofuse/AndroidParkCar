@@ -98,6 +98,16 @@
         android:textSize="16sp"
         android:layout_marginTop="20dp"/>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Sei già un utente? Accedi!"/>
+
 
 
 
