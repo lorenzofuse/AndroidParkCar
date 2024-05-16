@@ -1,10 +1,9 @@
+package com.example.lf_parkcar
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.lf_parkcar.Login
-import com.example.lf_parkcar.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,12 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val handler = Handler(Looper.getMainLooper())
-        handler.postDelayed({
-            // Avvia l'Activity di Login dopo 5 secondi
-            startActivity(Intent(this, Login::class.java))
-            // Chiudi l'attuale MainActivity
+        // Delay di 3 secondi prima di passare all'activity_sign_up
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
             finish()
-        }, 5000)
+        }, 300) // 3000 millisecondi = 3 secondi
     }
 }

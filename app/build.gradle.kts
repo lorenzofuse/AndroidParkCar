@@ -51,3 +51,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+tasks.register("console") {
+    doLast {
+        println("Hello from console task!")
+    }
+}
